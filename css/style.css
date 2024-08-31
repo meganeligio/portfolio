@@ -1,0 +1,126 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(34 34 34);
+    font-family: 'Urbanist', sans-serif;
+    padding: 1em;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.card-h1 {
+    color: rgb(163 191 141);
+    text-align: center;
+}
+
+
+/* RESPONSIVE IMG */
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+/* LOGO */
+
+.site-logo {}
+
+
+/* WORK GRID */
+
+.project-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-btn {
+    color: rgb(255 255 255);
+    padding: 0.8em;
+    text-transform: lowercase;
+    border-radius: 4px;
+    display: block;
+    width: 50%;
+    border: 2px solid rgb(255 255 255 / 0.2);
+    background: transparent;
+}
+
+.card-btn:hover {
+    background-color: rgb(255 255 255 / 0.12);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards-item {
+    display: flex;
+    padding: 1em;
+}
+
+@media (min-width: 40em) {
+    .cards-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56em) {
+    .cards-item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: rgb(255 255 255);
+    border-radius: 0.25em;
+    box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 1em;
+    background: rgb(163 191 141);
+}
+
+.card-title {
+    color: rgb(255 255 255);
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0px;
+}
+
+.card-text {
+    color: rgb(255 255 255);
+    font-size: 0.875em;
+    line-height: 1.5;
+    margin-bottom: 1.25em;
+    font-weight: 400;
+}
+
+.made-by {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-top: 35px;
+    text-align: center;
+}
